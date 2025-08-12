@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Order Submission</title>
+</head>
+<body>
+    <h2>Test Order Submission</h2>
+    <form action="store_order.php" method="POST">
+        <label>Product ID: <input type="number" name="product_id" value="1" required></label><br><br>
+        <label>Product Name: <input type="text" name="product_name" value="Test Product" required></label><br><br>
+        <label>Amount: <input type="number" name="amount" value="100" step="0.01" required></label><br><br>
+        <label>Payment ID: <input type="text" name="payment_id" value="test_payment_123" required></label><br><br>
+        <button type="submit">Submit Order</button>
+    </form>
+</body>
+</html>
