@@ -1,7 +1,7 @@
 <?php
 require "config/db.php";
 
-$id = intval($_GET['id']); // Always sanitize GET params!
+$id = intval($_GET['id']);
 $sql = "SELECT * FROM products WHERE id = $id";
 $result = mysqli_query($conn, $sql);
 $product = mysqli_fetch_assoc($result);
